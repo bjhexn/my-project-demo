@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:text="test"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="bold"
+        android:textSize="36dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn"
+            android:text="@string/tv_btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+        <Button
+            android:text="@string/tv_btn_async"
+            android:id="@+id/btn_async"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+        <Button
+            android:text="@string/tv_btn_recycler"
+            android:id="@+id/btn_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+        <Button
+            android:text="@string/tv_btn_recycler2"
+            android:id="@+id/btn_recycler2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+        <Button
+            android:text="@string/btn_goto_okhttp"
+            android:id="@+id/btn_goto_okhttp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+        <Button
+            android:text="@string/btn_goto_update"
+            android:id="@+id/btn_goto_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+        <Button
+            android:text="@string/btn_goto_encry_save"
+            android:id="@+id/btn_goto_encry_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+    </LinearLayout>
+
+    <TextView
+        android:text=""
+        android:id="@+id/tv_jni"
+        android:layout_below="@+id/ll"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+</RelativeLayout>
