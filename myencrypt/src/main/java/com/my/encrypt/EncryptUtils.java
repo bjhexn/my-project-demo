@@ -18,6 +18,8 @@ import javax.crypto.spec.IvParameterSpec;
 /**
  * Created by xy on 16/1/4.
  *
+ * 使用so库进行加密
+ *
  * github 地址： https://github.com/a12a15a05/NdkJniDemo
  */
 public class EncryptUtils {
