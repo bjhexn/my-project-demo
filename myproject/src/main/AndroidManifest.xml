@@ -38,7 +38,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".study.okhttp.OkHttpDemoActivity" />
         <activity android:name=".update.activity.UpdateActivity" />
-        <activity android:name=".study.EncryptActivity"></activity>
+        <activity android:name=".study.EncryptActivity" />
+        <activity android:name=".study.recyclerview.recycle.NewRecycleActivity"></activity>
     </application>
 
 </manifest>

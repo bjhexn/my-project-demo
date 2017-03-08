@@ -2,7 +2,6 @@ package com.my.project.main.fragmet;
 
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -18,8 +17,8 @@ import com.my.project.main.contract.MainContract;
 import com.my.project.study.EncryptActivity;
 import com.my.project.study.asynctask.AsyncTaskActivity;
 import com.my.project.study.okhttp.OkHttpDemoActivity;
-import com.my.project.study.recyclerview.RecyclerViewActivity;
 import com.my.project.study.recyclerview.photo.RecyclerViewPhotoActivity;
+import com.my.project.study.recyclerview.recycle.NewRecycleActivity;
 import com.my.project.update.activity.UpdateActivity;
 
 public class MainFragment extends Fragment implements View.OnClickListener, MainContract.View{
@@ -132,7 +131,9 @@ public class MainFragment extends Fragment implements View.OnClickListener, Main
                 startActivity(new Intent(getActivity(), AsyncTaskActivity.class));
                 break;
             case R.id.btn_recycler:
-                startActivity(new Intent(getActivity(), RecyclerViewActivity.class));
+                //startActivity(new Intent(getActivity(), RecyclerViewActivity.class));
+                startActivity(new Intent(getActivity(), NewRecycleActivity.class));
+
                 break;
             case R.id.btn_recycler2:
                 startActivity(new Intent(getActivity(), RecyclerViewPhotoActivity.class));
