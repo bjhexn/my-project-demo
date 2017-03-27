@@ -6,6 +6,8 @@
     <string name="tv_btn_async">AsyncTask 例子</string>
     <string name="tv_btn_recycler">Revycler 例子</string>
     <string name="tv_btn_recycler2">Revycler2 例子</string>
+    <string name="tv_btn_recycler_section">revycler section 例子</string>
+
     <string name="btn_goto_okhttp">OKHttp测试</string>
     <string name="btn_goto_update">增量更新</string>
     <string name="btn_goto_encry_save">加解密使用动态库</string>

@@ -37,4 +37,5 @@ dependencies {
     compile 'com.squareup.okhttp:okhttp-urlconnection:2.2.0'
     compile 'com.google.code.gson:gson:2.2.4'
     compile project(':myencrypt')
+    compile 'com.truizlop.sectionedrecyclerview:library:1.0.0'
 }

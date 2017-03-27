@@ -19,11 +19,12 @@ import com.my.project.study.asynctask.AsyncTaskActivity;
 import com.my.project.study.okhttp.OkHttpDemoActivity;
 import com.my.project.study.recyclerview.photo.RecyclerViewPhotoActivity;
 import com.my.project.study.recyclerview.recycle.NewRecycleActivity;
+import com.my.project.study.recyclerview.sectionrecycle.SectionRecycleActivity;
 import com.my.project.update.activity.UpdateActivity;
 
 public class MainFragment extends Fragment implements View.OnClickListener, MainContract.View{
 
-    private Button btn, btn_async, btn_recycler, btn_recycler2, btn_okhttp,btn_goto_update,btn_goto_encry_save;
+    private Button btn, btn_async, btn_recycler, btn_recycler2, btn_okhttp,btn_goto_update,btn_goto_encry_save, btn_recycler_section;
     private MainContract.Presenter presenter;
     private TextView tv1, tv_jni;
 
@@ -67,6 +68,7 @@ public class MainFragment extends Fragment implements View.OnClickListener, Main
         btn_okhttp = (Button) view.findViewById(R.id.btn_goto_okhttp);
         btn_goto_update = (Button) view.findViewById(R.id.btn_goto_update);
         btn_goto_encry_save = (Button) view.findViewById(R.id.btn_goto_encry_save);
+        btn_recycler_section = (Button) view.findViewById(R.id.btn_recycler_section);
 
         btn.setOnClickListener(this);
         btn_async.setOnClickListener(this);
@@ -75,6 +77,7 @@ public class MainFragment extends Fragment implements View.OnClickListener, Main
         btn_okhttp.setOnClickListener(this);
         btn_goto_update.setOnClickListener(this);
         btn_goto_encry_save.setOnClickListener(this);
+        btn_recycler_section.setOnClickListener(this);
 
         tv1 = (TextView) view.findViewById(R.id.tv1);
         tv_jni = (TextView) view.findViewById(R.id.tv_jni);
@@ -133,10 +136,12 @@ public class MainFragment extends Fragment implements View.OnClickListener, Main
             case R.id.btn_recycler:
                 //startActivity(new Intent(getActivity(), RecyclerViewActivity.class));
                 startActivity(new Intent(getActivity(), NewRecycleActivity.class));
-
                 break;
             case R.id.btn_recycler2:
                 startActivity(new Intent(getActivity(), RecyclerViewPhotoActivity.class));
+                break;
+            case R.id.btn_recycler_section:
+                startActivity(new Intent(getActivity(), SectionRecycleActivity.class));
                 break;
             case R.id.btn_goto_okhttp:
                 startActivity(new Intent(getActivity(), OkHttpDemoActivity.class));
